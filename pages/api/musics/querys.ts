@@ -5,6 +5,7 @@ export const GET_MUSICS = gql`
       id
       title
       artist
+      image
     }
   }
 `;
@@ -14,6 +15,7 @@ export const GET_MUSIC = gql`
       id
       title
       artist
+      image
     }
   }
 `;

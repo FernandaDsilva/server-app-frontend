@@ -13,7 +13,7 @@ const graphQLClient = new GraphQLClient(endpoint);
 const Music = () => {
      const router = useRouter()  
 
-     const [music, setMusic] = useState({title: '', artist:''})
+     const [music, setMusic] = useState({title: '', artist:'', image:''})
 
     const { id } = router.query 
 
@@ -40,6 +40,8 @@ const Music = () => {
             <form onSubmit={handleSubmit(onSubmitForm)}>
             <input type="text" name="title" ref={register} defaultValue={music?music.title:''} />
             <input type="text" name="artist" ref={register} defaultValue={music?music.artist:''} />
+            <input type="text" name="image" ref={register} defaultValue={music?music.image:''}/>
+
             <input type="submit" value="submit" />
             </form>           
     </div>

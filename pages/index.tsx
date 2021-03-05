@@ -41,6 +41,7 @@ export default function Home() {
               <a>
                 <h1> {music.title} </h1>
                 <p> {music.artist} </p>
+                <img src={music.image} width="200px"/>
               </a>
             </Link>
 
@@ -51,6 +52,7 @@ export default function Home() {
       <form onSubmit={handleSubmit(onSubmitForm)}>
         <input type="text" name="title" ref={register} />
         <input type="text" name="artist" ref={register} />
+        <input type="text" name="image" ref={register} />
         <input type="submit" value="submit" />
       </form>
     </div>
